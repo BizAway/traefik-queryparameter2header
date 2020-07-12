@@ -1,0 +1,55 @@
+version: "2"
+
+run:
+  timeout: 3m
+
+linters:
+  default: all
+  disable:
+    - bodyclose
+    - depguard
+    - dupl
+    - err113
+    - exhaustive
+    - exhaustruct
+    - forbidigo
+    - lll
+    - nlreturn
+    - noctx
+    - revive
+    - testpackage
+    - tparallel
+    - varnamelen
+    - wrapcheck
+    - wsl
+    - wsl_v5
+
+  settings:
+    govet:
+      enable-all: true
+      disable:
+        - fieldalignment
+    gocyclo:
+      min-complexity: 12
+    goconst:
+      min-len: 5
+      min-occurrences: 4
+    misspell:
+      locale: US
+    funlen:
+      lines: -1
+      statements: 50
+    godox:
+      keywords:
+        - FIXME
+  exclusions:
+    rules:
+      - path: (.+)_test.go
+        linters:
+          - funlen
+          - goconst
+          - godot
+          - unparam
+
+issues:
+  max-same-issues: 0

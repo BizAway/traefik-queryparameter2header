@@ -1,0 +1,12 @@
+displayName: Query Parameter To Header
+type: middleware
+iconPath: .assets/icon.png
+
+import: github.com/bizaway/traefik-queryparameter2header
+
+summary: 'Add a request header with the value of the specified query parameter'
+
+testData:
+  queryParameter: qp
+  header: X-Plugin-Test
+  override: false
