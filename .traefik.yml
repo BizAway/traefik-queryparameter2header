@@ -3,6 +3,7 @@ type: middleware
 iconPath: .assets/icon.png
 
 import: github.com/BizAway/traefik-queryparameter2header
+basePkg: queryparameter2header
 
 summary: 'Add a request header with the value of the specified query parameter'
 
