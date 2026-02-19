@@ -1,6 +1,6 @@
 # Query Parameter To Header plugin for Traefik
 
-[![Build Status](https://github.com/bizaway/traefik-queryparameter2header/actions/workflows/main.yml/badge.svg)](https://github.com/bizaway/traefik-queryparameter2header/actions/workflows/main.yml)
+[![Build Status](https://github.com/BizAway/traefik-queryparameter2header/actions/workflows/main.yml/badge.svg)](https://github.com/BizAway/traefik-queryparameter2header/actions/workflows/main.yml)
 
 Middleware plugin for Traefik for setting a request header to the value of a query parameter.
 
